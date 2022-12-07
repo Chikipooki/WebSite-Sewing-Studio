@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Comfortaa', cursive;
 
     font-size: 15px;
     line-height: 1.6;
@@ -32,14 +32,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100vh;
 
-    background: url("../Images/Intro/Intro_Back.jpg") center no-repeat;
+    background: url("../Images/Intro/Background_Page1.png") center no-repeat;
     background-size: cover;
 }
 
 .intro__title {
     font-size: 100px;
     font-weight: 700;
-    text-transform: uppercase;
     line-height: 1;
 }
 
@@ -54,16 +53,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro_suptittle {
-    font-size: 42px;
+    font-size: 72px;
     color: #fff;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Pacifico', cursive;
     margin-bottom: 20px;
 }
 
 .intro_inner {
     color: #fff;
     width: 100%;
-    max-width: 800px;
+    max-width: 800vw;
     margin: 0 auto;
 
     text-align: center;
@@ -176,7 +175,6 @@ h1, h2, h3, h4, h5, h6 {
 .slider__inner {
     display: flex;
     justify-content: space-between;
-
 }
 
 .slider__item {
@@ -214,4 +212,39 @@ h1, h2, h3, h4, h5, h6 {
 .slider__number {
     font-style: 24px;
     font-weight: 700;
+}
+
+/* Selection */
+.selection  {
+    padding: 80px 0;
+}
+
+.selection__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.selection__suptitle {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+.selection__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.selection__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto 0;
+
+    background-color: #f38181;
 }
