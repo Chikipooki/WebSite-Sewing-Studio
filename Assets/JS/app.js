@@ -4,6 +4,7 @@ $(function() {
         introH = $("#intro").innerHeight(),
         scrollOffset = $(window).scrollTop();
 
+    /*Header fixed */
     checkScroll(scrollOffset);
 
     $(window).on("scroll", function() {
@@ -19,4 +20,17 @@ $(function() {
             header.removeClass("fixed");
         }
     }
+
+    /* Smooth scroll*/
+    $("[data-scroll]").on("click", function(event) {
+        event.preventDefault();
+
+        var blockId = $(this).data('scroll'),
+            blockOffset = $(blockId).offset().top;
+
+        $("html, body").animate({
+            scrollTop: blockOffset
+        }, 500);
+    });
+
 });
